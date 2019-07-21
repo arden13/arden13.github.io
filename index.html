@@ -6,8 +6,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a2875238e8.js"></script>
 <style>
+
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
 </style>
 <body class="w3-light-grey">
 
@@ -22,53 +25,156 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="/img/headshot.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Jane Doe</h2>
-          </div>
+			<img src="/img/headshot.jpg" style="width:100%" alt="Avatar">
+			<div class="w3-display-bottomleft w3-container w3-text-light-grey">
+				<h2>Ryan Wall</h2>
+			</div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Chemist, Spectroscopist, and Data Scientist</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Pennington, NJ</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ryanwall@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>4026399990</p>
-          <hr>
+			<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Scientist</p>
+			<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Pennington, NJ</p>
+			<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ryanwall@gmail.com</p>
+			<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(402) 639-9990</p>
+			<hr>
+			<p class="w3-xlarge"><i class="fas fa-flask w3-margin-right w3-text-teal"></i><b>Lab Skills</b></p>
+		  <!-- Also possible: <p class="w3-xlarge"><i class="fas fa-wave-square w3-margin-right w3-text-teal"></i><b>Lab Skills</b></p> -->
+		  
+			<button onclick="buttonShow('SpecButton')" class="w3-button w3-block w3-left-align">
+				<b>Spectroscopy</b></button>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Adobe Photoshop</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>Photography</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
-          </div>
-          <p>Illustrator</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>Media</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <br>
+				<div id="SpecButton" class="w3-container w3-hide">
+					<ul class="w3-ul">
+						<li>Electron Paramagnetic Resonance</li>
+						<li><sup>1</sup>H NMR</li>
+						<li>Near Infrared</li>
+						<li>Raman</li>
+						<li>UV/Vis</li>
+						<li>Powder X-Ray Diffraction</li>
+						<li>HPLC</li>
+						<li>GC</li>
+						<li>Mass Spec</li>
+					</ul>
+				</div>	
+		
+			<button onclick="buttonShow('ElectrochemButton')" class="w3-button w3-block w3-left-align">
+				<b>Electrochemistry</b></button>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <p>Spanish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-          </div>
-          <p>German</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <br>
+				<div id="ElectrochemButton" class="w3-container w3-hide">
+					<ul class="w3-ul">
+						<li>Cyclic Voltammetry</li>
+						<li>Square-Wave Voltammetry</li>
+						<li>Chronoamperometry</li>
+						<li>Chronopotentiometry</li>
+						<li>Tafel Analysis</li>
+						<li>Anodic and Cathodic Deposition</li>
+						<li>Cell Design</li>
+					</ul>
+				</div>	
+				
+			<button onclick="buttonShow('MiscLabButton')" class="w3-button w3-block w3-left-align">
+				<b>Misc. Lab Techniques</b></button>
+
+				<div id="MiscLabButton" class="w3-container w3-hide">
+					<ul class="w3-ul">
+						<li>Cryogen Handling</li>
+						<li>Schlenk-Line</li>
+					</ul>
+				</div>	
+			
+			<hr>
+			<p class="w3-xlarge"><i class="fas fa-laptop-code w3-margin-right w3-text-teal"></i><b>Computer Skills</b></p>
+		  
+			<button onclick="buttonShow('MVAButton')" class="w3-button w3-block w3-left-align">
+				<b>Multivariate Analysis</b><i class="arrow right"></i></button>
+
+				<div id="MVAButton" class="w3-container w3-hide">
+					<ul class="w3-ul">
+						<li>Principal Component Analysis</li>
+						<li>Partial Least Squares</li>
+						<li>Batch-Evolution Modeling</li>
+						<li>Batch-Level Modeling</li>
+						<li>Monte Carlo Simulation</li>
+						<li>PLS Toolbox</li>
+						<li>SIMCA</li>
+					</ul>
+				</div>	
+		
+			<button onclick="buttonShow('MatlabButton')" class="w3-button w3-block w3-left-align">
+				<b>MATLAB</b></button>
+
+				<div id="MatlabButton" class="w3-container w3-hide">
+					<ul class="w3-ul">
+						<li>Spectral Simulation</li>
+						<li>Data Import/Export</li>
+						<li>Functional Scripting</li>
+						<li>Figure Generation</li>
+					</ul>
+				</div>	
+				
+			<button onclick="buttonShow('OfficeButton')" class="w3-button w3-block w3-left-align">
+				<b>Microsoft Office</b></button>
+
+				<div id="OfficeButton" class="w3-container w3-hide">
+					<ul class="w3-ul">
+						<li>Powerpoint</li>
+						<li>Word</li>
+						<li>Excel
+							<ul class="w3-ul w3-small">
+								<li>Pivot Tables</li>
+								<li>Contitional IF</li>
+								<li>Array Formulas</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			
+			<button onclick="buttonShow('MiscSoftwareButton')" class="w3-button w3-block w3-left-align">
+				<b>Misc. Software</b></button>
+
+				<div id="MiscSoftwareButton" class="w3-container w3-hide">
+					<ul class="w3-ul">
+						<li>SQL</li>
+						<li>LaTeX</li>
+						<li>Python</li>
+						<li>Gaussian</li>
+					</ul>
+				</div>
+			
+			<hr>
+			<p class="w3-xlarge"><i class="fas fa-coffee w3-margin-right w3-text-teal"></i><b>Interests</b></p>
+		  
+			<button onclick="buttonShow('CookingButton')" class="w3-button w3-block w3-left-align">
+				<b>Cooking</b><i class="arrow right"></i></button>
+
+				<div id="CookingButton" class="w3-container w3-hide">
+					<ul class="w3-ul">
+						<li>Sous Vide</li>
+						<li>Sourdough Bread</li>
+					</ul>
+				</div>	
+		
+			<button onclick="buttonShow('HomebrewButton')" class="w3-button w3-block w3-left-align">
+				<b>Home Brew</b></button>
+
+				<div id="HomebrewButton" class="w3-container w3-hide">
+					<ul class="w3-ul">
+						<li>All Grain</li>
+						<li>Kegged Systems</li>
+						<li>Ales and Stouts</li>
+					</ul>
+				</div>	
+				
+			<button onclick="buttonShow('ComputersElectronicsButton')" class="w3-button w3-block w3-left-align">
+				<b>Computers and Electronics</b></button>
+
+				<div id="ComputersElectronicsButton" class="w3-container w3-hide">
+					<ul class="w3-ul">
+						<li>Arduino & Sensors</li>
+						<li>Small programming projects</li>
+					</ul>
+				</div>
+			
+		<br>	
         </div>
       </div><br>
 
@@ -78,48 +184,148 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- Right Column -->
     <div class="w3-twothird">
     
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+		<!--Begin Work Card-->
+		<div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">
+			<i class="fa fa-building fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+			Work Experience
+		</h2>
+		
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
+			<h5 class="w3-opacity"><b>Scientist</b> <small>Janssen Pharmaceuticals, Titusville NJ</small></h5>
+			<h6 class="w3-text-teal">
+			<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+			June 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+			<p>
+			  <ul style="w3-ul">
+				<li>Developed a Surrogate Dissolution Model for RTRT Project</li>
+				<li>Mentored two Co-Ops</li>
+			  </ul>
+			</p>
+			<hr>
         </div>
+		
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
+			<h5 class="w3-opacity"><b>Postdoctoral Fellow</b> <small>Janssen Pharmaceuticals, Raritan NJ</small></h5>
+			<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2018 - June 2019</h6>
+			<p>
+				<ul style="w3-ul">
+					<li>Organized and Analyzed Data for RTRT Project</li>
+					<li>Primary Author on RTRT Phase III Report</li>
+					<li>Supported Writing of Surrogate Dissolution Model Regulatory Response</li>
+					<li>Developed Scientiﬁcally-Driven Rationale for Skip-Lot Testing of Impurities</li>
+					<li>Consulted with Various Consumer/Pharmaceutical Product groups on Implementation of Spectroscopic Models</li>
+				</ul>
+			</p>
+			<hr>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+		
+		<div class="w3-container">
+			<h5 class="w3-opacity"><b>Co-Op</b> <small>Janssen Pharmaceuticals, Raritan NJ</small></h5>
+			<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 - Oct 2018</h6>
+			<p>
+				<ul style="w3-ul">
+					<li>Developed and Executed Software Transfer Protocols for submission to FDA</li>
+					<li>Primary Author on RTRT Phase II Report</li>
+					<li>Developed GUI for predicting Analyte Concentration for Source Vendor</li>
+					<li>Derived Relationships between Quality Metrics for popular Modeling Software Packages PLS Toolbox, SIMCA, and OPUS</li>
+					<li>Supported Surrogate Dissolution Model Validation Activities</li>
+				</ul>
+			</p>
+			<!--<hr> use HR for break between cards, br for end of cards for padding-->
+			<br>
         </div>
-      </div>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+		<!--End Work Card-->
+		</div>
+	
+		<!--Begin Education Card-->
+		<div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16">
+			<i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+			Education
+		</h2>
+		
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
+			<h5 class="w3-opacity"><b>Ph.D. Physical Chemistry</b> <small>UC Davis, 3.91 GPA</small></h5>
+			<h6 class="w3-text-teal">
+			<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+			2012 - 2018</h6>
+			<p><i>Electrochemical EPR investigations into Water Oxidation Electrocatalysis</i></p>
+			<p>Advisor: Prof. R.D. Britt</p>
+			<p>Research Accomplishments
+				<ul style="w3-ul">
+					<li>Developed in-situ electrochemical EPR cells to probe short-lived species</li>
+					<li>Trained two undergraduate students in electrochemical techniques and mentored them through goal-setting and troubleshooting</li>
+					<li>Co-authored three publications (2in-progress) and presented research at three conferences</li>
+				</ul>
+			</p>
+			<p>Teaching Accomplishments
+				<ul style="w3-ul">
+					<li>9 Quarters as a TA or head TA</li>
+					<li>Assisted in lectures of 400+ students</li>
+					<li>Planned logistics of exams, grading, and student accommodations for 400+ students</li>
+					<li>Resolved complaints of disgruntled students</li>
+					<li>Developed and taught material for small, 24 person classes and distributed to other TAs</li>
+					<li>Maintained safe laboratory environment for students</li>
+				</ul>
+			</p>
+			<hr>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
-          <hr>
+		
+		<div class="w3-container">
+			<h5 class="w3-opacity"><b>B.S.</b> <small>University of Nebraska, Lincoln, 3.36 GPA</small></h5>
+			<h6 class="w3-text-teal">
+			<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+			2008 - 2012</h6>
+			<p>Major in Chemistry, Minors in Physics and Mathematics</p>
+			<hr>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
-        </div>
-      </div>
+		
+		<!--End Education Card-->
+		</div>
 
+		<!--Begin Presentation/Publication Card-->
+		<div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16">
+			<i class="fa fa-scroll fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+			Publications and Presentations
+		</h2>
+		
+        <div class="w3-container">
+			<h5 class="w3-opacity"><b>Publications</b></h5>
+			<p>Troy A. Stich, J. Gregory McAlpin, Ryan M. Wall, Matthew L. Rigsby, and R. David Britt. 
+			Electron Paramagnetic Resonance Characterization of Dioxygen-Bridged Cobalt Dimers with Relevance to Water Oxidation.
+			<i>Inorganic Chemistry,</i> 55(24):12728–12736, December 2016.</p>
+		<hr>
+        </div>
+		
+		<div class="w3-container">
+			<h5 class="w3-opacity"><b>Oral Presentations</b></h5>
+			<p>Gray - Britt Collaboration: EPR Spectroscopy for Mechanistic Insights of Water Oxidation Catalysts made by PLAL,
+			<i>2015 CCI Solar Fuels Annual Meeting</i>, Newport Beach CA, January 23-25, 2015</p>
+		<hr>
+        </div>
+		
+		<div class="w3-container">
+			<h5 class="w3-opacity"><b>Poster Presentations</b></h5>
+			
+			<p>Advances in In-situ Electrochemical EPR on Water Oxidizing Electrocatalysts and Model Compounds,
+			<i>2015 CCI Solar Fuels Annual Meeting</i>,
+			Newport Beach CA, January 23-25, 2015</p>
+			
+			<p>In-situ Electrochemical EPR of a µ3-oxo Cobalt Trimer as a Model for the Active Site in Co-Pi,
+			<i>2016 CCI Solar Fuels Annual Meeting</i>,
+			Newport Beach CA, February 5-7, 2016</p>
+			
+			<p>Probing Cobalt Oxide and Model Compounds with Electrochemistry and EPR,
+			<i>2017 CCI Solar Fuels Annual Meeting</i>,
+			Newport Beach CA, January 27-29, 2017 </p>
+		<hr>
+        </div>
+		
+		<!--End Presentation/Publication Card-->
+		</div>
     <!-- End Right Column -->
     </div>
     
@@ -139,6 +345,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <i class="fa fa-linkedin w3-hover-opacity"></i>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+
+<script>
+function buttonShow(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html>
