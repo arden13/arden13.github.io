@@ -8,363 +8,497 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/a2875238e8.js"></script>
 <style>
+	html,
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Roboto", sans-serif
+	}
 
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+	button:after {
+		content: "+";
+		float: right;
+	}
 
-button:after {
-	content: "+";
-	float: right;	
-}
-
-.active:after {
-	content: "\2013";
-}
-
+	.active:after {
+		content: "\2013";
+	}
 </style>
+
 <body class="w3-light-grey">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+	<!-- Page Container -->
+	<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-			<img src="/img/headshot.jpg" style="width:100%" alt="Avatar">
-			<div class="w3-display-bottomleft w3-container w3-text-black" style="text-shadow:1px 1px 0 #444">
-				<h2>Ryan Wall</h2>
-			</div>
-        </div>
-        <div class="w3-container">
-			<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Scientist</p>
-			<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Lawrence Twp, NJ</p>
-			<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ryanwall@gmail.com</p>
-			<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(402) 639-9990</p>
-			<hr>
-			<p class="w3-xlarge"><i class="fas fa-flask w3-margin-right w3-text-teal"></i><b>Lab Skills</b></p>
-		  <!-- Also possible: <p class="w3-xlarge"><i class="fas fa-wave-square w3-margin-right w3-text-teal"></i><b>Lab Skills</b></p> -->
-		  
-			<button id="specButton" onclick="buttonShow('specButton')" class="w3-button w3-block w3-left-align">
-				<b>Spectroscopy</b></button>
+		<!-- The Grid -->
+		<div class="w3-row-padding">
 
-				<div class="w3-container w3-hide">
-					<ul class="w3-ul">
-						<li>Electron Paramagnetic Resonance</li>
-						<li><sup>1</sup>H NMR</li>
-						<li>Near Infrared</li>
-						<li>Raman</li>
-						<li>UV/Vis</li>
-						<li>Powder X-Ray Diffraction</li>
-						<li>HPLC</li>
-						<li>GC</li>
-						<li>Mass Spec</li>
-					</ul>
-				</div>	
-		
-			<button id="electrochemButton" onclick="buttonShow('electrochemButton')" class="w3-button w3-block w3-left-align">
-				<b>Electrochemistry</b></button>
+			<!-- Left Column -->
+			<div class="w3-third">
 
-				<div class="w3-container w3-hide">
-					<ul class="w3-ul">
-						<li>Cyclic Voltammetry</li>
-						<li>Square-Wave Voltammetry</li>
-						<li>Chronoamperometry</li>
-						<li>Chronopotentiometry</li>
-						<li>Tafel Analysis</li>
-						<li>Anodic and Cathodic Deposition</li>
-						<li>Cell Design</li>
-					</ul>
-				</div>	
-				
-			<button id="miscLabButton" onclick="buttonShow('miscLabButton')" class="w3-button w3-block w3-left-align">
-				<b>Misc. Lab Techniques</b></button>
+				<div class="w3-white w3-text-grey w3-card-4">
+					<div class="w3-display-container">
+						<img src="./img/headshot.jpg" style="width:100%" alt="Avatar">
+						<div class="w3-display-bottomleft w3-container w3-text-black"
+							style="text-shadow:1px 1px 0 #444">
+							<h2>Ryan Wall</h2>
+						</div>
+					</div>
+					<div class="w3-container">
+						<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>MSAT Process
+							Modelling Senior Manager</p>
+						<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>1125 Trenton Harbourton
+							Rd, Titusville NJ</p>
+						<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>rwall9@its.jnj.com
+						</p>
+						<hr>
+						<p class="w3-xlarge"><i class="fas fa-flask w3-margin-right w3-text-teal"></i><b>Lab Skills</b>
+						</p>
+						<!-- Also possible: <p class="w3-xlarge"><i class="fas fa-wave-square w3-margin-right w3-text-teal"></i><b>Lab Skills</b></p> -->
 
-				<div class="w3-container w3-hide">
-					<ul class="w3-ul">
-						<li>Cryogen Handling</li>
-						<li>Schlenk-Line</li>
-					</ul>
-				</div>	
-			
-			<hr>
-			<p class="w3-xlarge"><i class="fas fa-laptop-code w3-margin-right w3-text-teal"></i><b>Computer Skills</b></p>
-		  
-			<button id="MVAButton" onclick="buttonShow('MVAButton')" class="w3-button w3-block w3-left-align">
-				<b>Multivariate Analysis</b><i class="arrow right"></i></button>
+						<button id="specButton" onclick="buttonShow('specButton')"
+							class="w3-button w3-block w3-left-align">
+							<b>Spectroscopy</b></button>
 
-				<div class="w3-container w3-hide">
-					<ul class="w3-ul">
-						<li>Principal Component Analysis</li>
-						<li>Partial Least Squares</li>
-						<li>Batch-Evolution Modeling</li>
-						<li>Batch-Level Modeling</li>
-						<li>Monte Carlo Simulation</li>
-						<li>PLS Toolbox</li>
-						<li>SIMCA</li>
-					</ul>
-				</div>	
-		
-			<button id="MatlabButton" onclick="buttonShow('MatlabButton')" class="w3-button w3-block w3-left-align">
-				<b>MATLAB</b></button>
-
-				<div class="w3-container w3-hide">
-					<ul class="w3-ul">
-						<li>Spectral Simulation</li>
-						<li>Data Import/Export</li>
-						<li>Functional Scripting</li>
-						<li>Figure Generation</li>
-					</ul>
-				</div>	
-				
-			<button id="OfficeButton" onclick="buttonShow('OfficeButton')" class="w3-button w3-block w3-left-align">
-				<b>Microsoft Office</b></button>
-
-				<div class="w3-container w3-hide">
-					<ul class="w3-ul">
-						<li>Powerpoint</li>
-						<li>Word</li>
-						<li>Excel
-							<ul class="w3-ul w3-small">
-								<li>Pivot Tables</li>
-								<li>Contitional IF</li>
-								<li>Array Formulas</li>
+						<div class="w3-container w3-hide">
+							<ul class="w3-ul">
+								<li>Electron Paramagnetic Resonance</li>
+								<li><sup>1</sup>H NMR</li>
+								<li>Near Infrared</li>
+								<li>Raman</li>
+								<li>UV/Vis</li>
+								<li>Powder X-Ray Diffraction</li>
+								<li>HPLC</li>
+								<li>GC</li>
+								<li>Mass Spec</li>
 							</ul>
-						</li>
-					</ul>
+						</div>
+
+						<button id="electrochemButton" onclick="buttonShow('electrochemButton')"
+							class="w3-button w3-block w3-left-align">
+							<b>Electrochemistry</b></button>
+
+						<div class="w3-container w3-hide">
+							<ul class="w3-ul">
+								<li>Cyclic Voltammetry</li>
+								<li>Square-Wave Voltammetry</li>
+								<li>Chronoamperometry</li>
+								<li>Chronopotentiometry</li>
+								<li>Tafel Analysis</li>
+								<li>Anodic and Cathodic Deposition</li>
+								<li>Cell Design</li>
+							</ul>
+						</div>
+
+						<button id="miscLabButton" onclick="buttonShow('miscLabButton')"
+							class="w3-button w3-block w3-left-align">
+							<b>Misc. Lab Techniques</b></button>
+
+						<div class="w3-container w3-hide">
+							<ul class="w3-ul">
+								<li>Cryogen Handling</li>
+								<li>Schlenk-Line</li>
+							</ul>
+						</div>
+
+						<hr>
+						<p class="w3-xlarge"><i class="fas fa-laptop-code w3-margin-right w3-text-teal"></i><b>Computer
+								Skills</b></p>
+
+						<button id="MVAButton" onclick="buttonShow('MVAButton')"
+							class="w3-button w3-block w3-left-align">
+							<b>Modeling</b><i class="arrow right"></i></button>
+
+						<div class="w3-container w3-hide">
+							<ul class="w3-ul">
+								<li>Principal Component Analysis</li>
+								<li>Partial Least Squares</li>
+								<li>Batch-Evolution Process Modeling</li>
+								<li>Batch-Level Process Modeling</li>
+								<li>Monte Carlo Simulation</li>
+								<li>Spectral Simulation</li>
+							</ul>
+						</div>
+
+
+						<button id="PythonButton" onclick="buttonShow('PythonButton')"
+							class="w3-button w3-block w3-left-align">
+							<b>Python</b></button>
+
+						<div class="w3-container w3-hide">
+							<ul class="w3-ul">
+								<li>Package Generation</li>
+								<li><code>pandas</code>, <code>numpy</code>, and <code>scipy</code> proficiency</li>
+								<li>Data Import/Export</li>
+								<li>Figure Generation</li>
+							</ul>
+						</div>
+
+						<button id="MatlabButton" onclick="buttonShow('MatlabButton')"
+							class="w3-button w3-block w3-left-align">
+							<b>MATLAB</b></button>
+
+						<div class="w3-container w3-hide">
+							<ul class="w3-ul">
+								<li>Data Import/Export</li>
+								<li>Functional Scripting</li>
+								<li>Figure Generation</li>
+							</ul>
+						</div>
+
+						<button id="OfficeButton" onclick="buttonShow('OfficeButton')"
+							class="w3-button w3-block w3-left-align">
+							<b>Microsoft Office</b></button>
+
+						<div class="w3-container w3-hide">
+							<ul class="w3-ul">
+								<li>Powerpoint</li>
+								<li>Word</li>
+								<li>Excel
+									<ul class="w3-ul w3-small">
+										<li>Pivot Tables</li>
+										<li>Contitional IF</li>
+										<li>Array Formulas</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<button id="MiscSoftwareButton" onclick="buttonShow('MiscSoftwareButton')"
+							class="w3-button w3-block w3-left-align">
+							<b>Misc. Software</b></button>
+
+						<div class="w3-container w3-hide">
+							<ul class="w3-ul">
+								<li><code>git</code></li>
+								<li>SQL</li>
+								<li>LaTeX</li>
+								<li>PLS Toolbox</li>
+								<li>SIMCA</li>
+							</ul>
+						</div>
+
+						<hr>
+						<p class="w3-xlarge"><i class="fas fa-coffee w3-margin-right w3-text-teal"></i><b>Interests</b>
+						</p>
+
+						<button id="CookingButton" onclick="buttonShow('CookingButton')"
+							class="w3-button w3-block w3-left-align">
+							<b>Cooking</b><i class="arrow right"></i></button>
+
+						<div class="w3-container w3-hide">
+							<ul class="w3-ul">
+								<li>Sous Vide</li>
+								<li>Sourdough Bread</li>
+								<li>Focaccia</li>
+								<li>Lactofermentation</li>
+							</ul>
+						</div>
+
+						<button id="HomebrewButton" onclick="buttonShow('HomebrewButton')"
+							class="w3-button w3-block w3-left-align">
+							<b>Home Brew</b></button>
+
+						<div class="w3-container w3-hide">
+							<ul class="w3-ul">
+								<li>All Grain</li>
+								<li>Kegged Systems</li>
+								<li>Ales and Stouts</li>
+							</ul>
+						</div>
+
+						<button id="ComputersElectronicsButton" onclick="buttonShow('ComputersElectronicsButton')"
+							class="w3-button w3-block w3-left-align">
+							<b>Gardening</b></button>
+
+						<div class="w3-container w3-hide">
+							<ul class="w3-ul">
+								<li>President of Titusville Garden Club</li>
+								<li>User of low and no-till methods</li>
+							</ul>
+						</div>
+
+						<br>
+					</div>
+				</div><br>
+
+				<!-- End Left Column -->
+			</div>
+
+			<!-- Right Column -->
+			<div class="w3-twothird">
+
+				<!--Begin Work Card-->
+				<div class="w3-container w3-card w3-white w3-margin-bottom">
+					<h2 class="w3-text-grey w3-padding-16">
+						<i class="fa fa-building fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+						Work Experience
+					</h2>
+
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>MSAT Process Modelling Senior Manager</b> <small>Janssen
+								Pharmaceuticals, Titusville NJ</small>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+							October 2023 - <span class="w3-tag w3-teal w3-round">Current</span>
+						</h6>
+						<p>
+						<ul style:"w3-ul">
+							<li>Packaged two models for deployment in GMP Environment/li>
+							<li>Mentored team of 10 in model deployment and Sustain activities</li>
+							<li>Drafted multiple SOPs including modeling and practices with Bitbucket</li>
+						</ul>
+						</p>
+						<hr>
+					</div>
+
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>MSAT Process Modelling Manager</b> <small>Janssen Pharmaceuticals,
+								Titusville NJ</small>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+							February 2023 - October 2023
+						</h6>
+						<p>
+						<ul style:"w3-ul">
+							<li>Served as business application owner for primary process modeling software negotiating
+								multimillion dollar contract</li>
+							<li>Used Agile tools to perform global model maintenance activities efficiently</li>
+							<li>Drove GMP Qualification of SIMCA at JnJ.</li>
+							<li>Served as model deployment SME helping to package models, define quality framework, and
+								assist in site adoption.</li>
+						</ul>
+						</p>
+						<hr>
+					</div>
+
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Senior Scientist</b> <small>Janssen Pharmaceuticals, Titusville
+								NJ</small>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+							October 2021 - February 2023
+						</h6>
+						<p>
+						<ul style:"w3-ul">
+							<li>Served as real time release SME helping to define workflow for future programs.</li>
+							<li>Developed skillsets of a small team of modeling SMEs and data engineer</li>
+							<li>Developed models and performed statistical analyses for various large and small molecule
+								processes</li>
+							<li>Developed process models that drove experiments at scale leading to yield improvements
+							</li>
+						</ul>
+						</p>
+						<hr>
+					</div>
+
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Scientist</b> <small>Janssen Pharmaceuticals, Titusville NJ</small>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+							June 2019 - October 2021
+						</h6>
+						<p>
+						<ul style:"w3-ul">
+							<li>Developed Python Package for Deployment of all Real-time Release Models</li>
+							<li>Co-Authored Guideline for Modeling and Simulation at JnJ</li>
+							<li>Developed unit testing framework to ensure clean deployment of modeling python package
+							</li>
+							<li>Developed a Surrogate Dissolution Model</li>
+							<li>Developed Batch-Level models for RTRT Project</li>
+							<li>Mentored two Co-Op students</li>
+						</ul>
+						</p>
+						<hr>
+					</div>
+
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Postdoctoral Fellow</b> <small>Janssen Pharmaceuticals, Raritan
+								NJ</small></h5>
+						<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2018 - June
+							2019</h6>
+						<p>
+						<ul style: "w3-ul">
+							<li>Organized and Analyzed Data for RTRT Project</li>
+							<li>Primary Author on RTRT Phase III Report</li>
+							<li>Supported Writing of Surrogate Dissolution Model Regulatory Response</li>
+							<li>Developed Scientiﬁcally-Driven Rationale for Skip-Lot Testing of Impurities</li>
+							<li>Consulted with Various Consumer/Pharmaceutical Product groups on Implementation of
+								Spectroscopic Models</li>
+						</ul>
+						</p>
+						<hr>
+					</div>
+
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Co-Op</b> <small>Janssen Pharmaceuticals, Raritan NJ</small></h5>
+						<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 - Oct 2018
+						</h6>
+						<p>
+						<ul style: "w3-ul">
+							<li>Developed and Executed Software Transfer Protocols for submission to FDA</li>
+							<li>Primary Author on RTRT Phase II Report</li>
+							<li>Developed GUI for predicting Analyte Concentration for Source Vendor</li>
+							<li>Derived Relationships between Quality Metrics for popular Modeling Software Packages PLS
+								Toolbox, SIMCA, and OPUS</li>
+							<li>Supported Surrogate Dissolution Model Validation Activities</li>
+						</ul>
+						</p>
+						<!--<hr> use HR for break between cards, br for end of cards for padding-->
+						<br>
+					</div>
+
+					<!--End Work Card-->
 				</div>
-			
-			<button id="MiscSoftwareButton" onclick="buttonShow('MiscSoftwareButton')" class="w3-button w3-block w3-left-align">
-				<b>Misc. Software</b></button>
 
-				<div class="w3-container w3-hide">
-					<ul class="w3-ul">
-						<li>SQL</li>
-						<li>LaTeX</li>
-						<li>Python</li>
-						<li>Gaussian</li>
-					</ul>
+				<!--Begin Education Card-->
+				<div class="w3-container w3-card w3-white">
+					<h2 class="w3-text-grey w3-padding-16">
+						<i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+						Education
+					</h2>
+
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Ph.D. Physical Chemistry</b> <small>UC Davis, 3.91 GPA</small></h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+							2012 - 2018
+						</h6>
+						<p><i>Electrochemical EPR investigations into Water Oxidation Electrocatalysis</i></p>
+						<p>Advisor: Prof. R.D. Britt</p>
+						<p>Research Accomplishments
+						<ul style: "w3-ul">
+							<li>Developed in-situ electrochemical EPR cells to probe short-lived species</li>
+							<li>Trained two undergraduate students in electrochemical techniques and mentored them
+								through goal-setting and troubleshooting</li>
+							<li>Co-authored three publications (2in-progress) and presented research at three
+								conferences</li>
+						</ul>
+						</p>
+						<p>Teaching Accomplishments
+						<ul style: "w3-ul">
+							<li>9 Quarters as a TA or head TA</li>
+							<li>Assisted in lectures of 400+ students</li>
+							<li>Planned logistics of exams, grading, and student accommodations for 400+ students</li>
+							<li>Resolved complaints of disgruntled students</li>
+							<li>Developed and taught material for small, 24 person classes and distributed to other TAs
+							</li>
+							<li>Maintained safe laboratory environment for students</li>
+						</ul>
+						</p>
+						<hr>
+					</div>
+
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>B.S.</b> <small>University of Nebraska, Lincoln, 3.36 GPA</small></h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+							2008 - 2012
+						</h6>
+						<p>Major in Chemistry, Minors in Physics and Mathematics</p>
+						<hr>
+					</div>
+
+					<!--End Education Card-->
 				</div>
-			
-			<hr>
-			<p class="w3-xlarge"><i class="fas fa-coffee w3-margin-right w3-text-teal"></i><b>Interests</b></p>
-		  
-			<button id="CookingButton" onclick="buttonShow('CookingButton')" class="w3-button w3-block w3-left-align">
-				<b>Cooking</b><i class="arrow right"></i></button>
 
-				<div class="w3-container w3-hide">
-					<ul class="w3-ul">
-						<li>Sous Vide</li>
-						<li>Sourdough Bread</li>
-					</ul>
-				</div>	
-		
-			<button id="HomebrewButton" onclick="buttonShow('HomebrewButton')" class="w3-button w3-block w3-left-align">
-				<b>Home Brew</b></button>
+				<!--Begin Presentation/Publication Card-->
+				<div class="w3-container w3-card w3-white">
+					<h2 class="w3-text-grey w3-padding-16">
+						<i class="fa fa-scroll fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+						Publications and Presentations
+					</h2>
 
-				<div class="w3-container w3-hide">
-					<ul class="w3-ul">
-						<li>All Grain</li>
-						<li>Kegged Systems</li>
-						<li>Ales and Stouts</li>
-					</ul>
-				</div>	
-				
-			<button id="ComputersElectronicsButton" onclick="buttonShow('ComputersElectronicsButton')" class="w3-button w3-block w3-left-align">
-				<b>Computers and Electronics</b></button>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Oral Presentations</b></h5>
+						<p>Mid-IR for Real-Time EOR Determination
+							<i>IFPAC</i>, 2024
+						</p>
+						<p>Real Time Release: A journey of and past present and into the future.
+							<i>IFPAC</i>, 2024
+						</p>
+						<p>Spectroscopic and <i>in-silico</i> Modeling
+							<i>PPAR Roundtable</i>, New Jersey, 2023
+						</p>
+						<p>Development of Real Time Release Test of Tablet Dissolution
+							<i>IFPAC</i>, Puerto Rico, 2019
+						</p>
+						<p>Gray - Britt Collaboration: EPR Spectroscopy for Mechanistic Insights of Water Oxidation
+							Catalysts made by PLAL,
+							<i>CCI Solar Fuels Annual Meeting</i>, Newport Beach CA, January 23-25, 2015
+						</p>
+						<hr>
+					</div>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Publications</b></h5>
+						<p>Troy A. Stich, J. Gregory McAlpin, Ryan M. Wall, Matthew L. Rigsby, and R. David Britt.
+							Electron Paramagnetic Resonance Characterization of Dioxygen-Bridged Cobalt Dimers with
+							Relevance to Water Oxidation.
+							<i>Inorganic Chemistry,</i> 55(24):12728–12736, December 2016.
+						</p>
+						<hr>
+					</div>
+					<div class="w3-container">
+						<h5 class="w3-opacity"><b>Poster Presentations</b></h5>
 
-				<div class="w3-container w3-hide">
-					<ul class="w3-ul">
-						<li>Arduino & Sensors</li>
-						<li>Small programming projects</li>
-					</ul>
+						<p>Advances in In-situ Electrochemical EPR on Water Oxidizing Electrocatalysts and Model
+							Compounds,
+							<i>2015 CCI Solar Fuels Annual Meeting</i>,
+							Newport Beach CA, January 23-25, 2015
+						</p>
+
+						<p>In-situ Electrochemical EPR of a µ3-oxo Cobalt Trimer as a Model for the Active Site in
+							Co-Pi,
+							<i>2016 CCI Solar Fuels Annual Meeting</i>,
+							Newport Beach CA, February 5-7, 2016
+						</p>
+
+						<p>Probing Cobalt Oxide and Model Compounds with Electrochemistry and EPR,
+							<i>2017 CCI Solar Fuels Annual Meeting</i>,
+							Newport Beach CA, January 27-29, 2017
+						</p>
+						<hr>
+					</div>
+
+					<!--End Presentation/Publication Card-->
 				</div>
-			
-		<br>	
-        </div>
-      </div><br>
+				<!-- End Right Column -->
+			</div>
 
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-		<!--Begin Work Card-->
-		<div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16">
-			<i class="fa fa-building fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
-			Work Experience
-		</h2>
-		
-        <div class="w3-container">
-			<h5 class="w3-opacity"><b>Scientist</b> <small>Janssen Pharmaceuticals, Titusville NJ</small></h5>
-			<h6 class="w3-text-teal">
-			<i class="fa fa-calendar fa-fw w3-margin-right"></i>
-			June 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-			<p>
-			  <ul style:"w3-ul">
-				<li>Developed a Surrogate Dissolution Model for RTRT Project</li>
-				<li>Mentored two Co-Ops</li>
-				<li>Developed Batch-Level models for RTRT Project</li>
-				<li>Developed Open Source Code for Deployment of RTRT Models</li>
-			  </ul>
-			</p>
-			<hr>
-        </div>
-		
-        <div class="w3-container">
-			<h5 class="w3-opacity"><b>Postdoctoral Fellow</b> <small>Janssen Pharmaceuticals, Raritan NJ</small></h5>
-			<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2018 - June 2019</h6>
-			<p>
-				<ul style: "w3-ul">
-					<li>Organized and Analyzed Data for RTRT Project</li>
-					<li>Primary Author on RTRT Phase III Report</li>
-					<li>Supported Writing of Surrogate Dissolution Model Regulatory Response</li>
-					<li>Developed Scientiﬁcally-Driven Rationale for Skip-Lot Testing of Impurities</li>
-					<li>Consulted with Various Consumer/Pharmaceutical Product groups on Implementation of Spectroscopic Models</li>
-				</ul>
-			</p>
-			<hr>
-        </div>
-		
-		<div class="w3-container">
-			<h5 class="w3-opacity"><b>Co-Op</b> <small>Janssen Pharmaceuticals, Raritan NJ</small></h5>
-			<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 - Oct 2018</h6>
-			<p>
-				<ul style: "w3-ul">
-					<li>Developed and Executed Software Transfer Protocols for submission to FDA</li>
-					<li>Primary Author on RTRT Phase II Report</li>
-					<li>Developed GUI for predicting Analyte Concentration for Source Vendor</li>
-					<li>Derived Relationships between Quality Metrics for popular Modeling Software Packages PLS Toolbox, SIMCA, and OPUS</li>
-					<li>Supported Surrogate Dissolution Model Validation Activities</li>
-				</ul>
-			</p>
-			<!--<hr> use HR for break between cards, br for end of cards for padding-->
-			<br>
-        </div>
-
-		<!--End Work Card-->
-		</div>
-	
-		<!--Begin Education Card-->
-		<div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16">
-			<i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
-			Education
-		</h2>
-		
-        <div class="w3-container">
-			<h5 class="w3-opacity"><b>Ph.D. Physical Chemistry</b> <small>UC Davis, 3.91 GPA</small></h5>
-			<h6 class="w3-text-teal">
-			<i class="fa fa-calendar fa-fw w3-margin-right"></i>
-			2012 - 2018</h6>
-			<p><i>Electrochemical EPR investigations into Water Oxidation Electrocatalysis</i></p>
-			<p>Advisor: Prof. R.D. Britt</p>
-			<p>Research Accomplishments
-				<ul style: "w3-ul">
-					<li>Developed in-situ electrochemical EPR cells to probe short-lived species</li>
-					<li>Trained two undergraduate students in electrochemical techniques and mentored them through goal-setting and troubleshooting</li>
-					<li>Co-authored three publications (2in-progress) and presented research at three conferences</li>
-				</ul>
-			</p>
-			<p>Teaching Accomplishments
-				<ul style: "w3-ul">
-					<li>9 Quarters as a TA or head TA</li>
-					<li>Assisted in lectures of 400+ students</li>
-					<li>Planned logistics of exams, grading, and student accommodations for 400+ students</li>
-					<li>Resolved complaints of disgruntled students</li>
-					<li>Developed and taught material for small, 24 person classes and distributed to other TAs</li>
-					<li>Maintained safe laboratory environment for students</li>
-				</ul>
-			</p>
-			<hr>
-        </div>
-		
-		<div class="w3-container">
-			<h5 class="w3-opacity"><b>B.S.</b> <small>University of Nebraska, Lincoln, 3.36 GPA</small></h5>
-			<h6 class="w3-text-teal">
-			<i class="fa fa-calendar fa-fw w3-margin-right"></i>
-			2008 - 2012</h6>
-			<p>Major in Chemistry, Minors in Physics and Mathematics</p>
-			<hr>
-        </div>
-		
-		<!--End Education Card-->
+			<!-- End Grid -->
 		</div>
 
-		<!--Begin Presentation/Publication Card-->
-		<div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16">
-			<i class="fa fa-scroll fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
-			Publications and Presentations
-		</h2>
-		
-        <div class="w3-container">
-			<h5 class="w3-opacity"><b>Publications</b></h5>
-			<p>Troy A. Stich, J. Gregory McAlpin, Ryan M. Wall, Matthew L. Rigsby, and R. David Britt. 
-			Electron Paramagnetic Resonance Characterization of Dioxygen-Bridged Cobalt Dimers with Relevance to Water Oxidation.
-			<i>Inorganic Chemistry,</i> 55(24):12728–12736, December 2016.</p>
-		<hr>
-        </div>
-		
-		<div class="w3-container">
-			<h5 class="w3-opacity"><b>Oral Presentations</b></h5>
-			<p>Gray - Britt Collaboration: EPR Spectroscopy for Mechanistic Insights of Water Oxidation Catalysts made by PLAL,
-			<i>2015 CCI Solar Fuels Annual Meeting</i>, Newport Beach CA, January 23-25, 2015</p>
-		<hr>
-        </div>
-		
-		<div class="w3-container">
-			<h5 class="w3-opacity"><b>Poster Presentations</b></h5>
-			
-			<p>Advances in In-situ Electrochemical EPR on Water Oxidizing Electrocatalysts and Model Compounds,
-			<i>2015 CCI Solar Fuels Annual Meeting</i>,
-			Newport Beach CA, January 23-25, 2015</p>
-			
-			<p>In-situ Electrochemical EPR of a µ3-oxo Cobalt Trimer as a Model for the Active Site in Co-Pi,
-			<i>2016 CCI Solar Fuels Annual Meeting</i>,
-			Newport Beach CA, February 5-7, 2016</p>
-			
-			<p>Probing Cobalt Oxide and Model Compounds with Electrochemistry and EPR,
-			<i>2017 CCI Solar Fuels Annual Meeting</i>,
-			Newport Beach CA, January 27-29, 2017 </p>
-		<hr>
-        </div>
-		
-		<!--End Presentation/Publication Card-->
-		</div>
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
+		<!-- End Page Container -->
+	</div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <!--<p>Find me on social media.</p>
+	<footer class="w3-container w3-teal w3-center w3-margin-top">
+		<!--<p>Find me on social media.</p>
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
   <i class="fa fa-snapchat w3-hover-opacity"></i>
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i> -->
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+		<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+	</footer>
 
-<script>
-function buttonShow(buttonID) {
-  var button = document.getElementById(buttonID);
-  button.classList.toggle("active")
+	<script>
+		function buttonShow(buttonID) {
+			var button = document.getElementById(buttonID);
+			button.classList.toggle("active")
 
-	button.nextElementSibling.classList.toggle("w3-show")
-}
-</script>
+			button.nextElementSibling.classList.toggle("w3-show")
+		}
+	</script>
 
 </body>
+
 </html>
