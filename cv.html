@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+  <title>Ryan Wall</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+  />
+  <script src="https://kit.fontawesome.com/a2875238e8.js"></script>
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      font-family: "Roboto", sans-serif;
+    }
+
+    button:after {
+      content: "+";
+      float: right;
+    }
+
+    .active:after {
+      content: "\2013";
+    }
+  </style>
+
+  <body class="w3-light-grey">
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width: 1400px">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+        <!-- Left Column -->
+        <div class="w3-third w3-margin-top">
+          <div class="w3-white w3-text-grey w3-card-4">
+            <header class="w3-container w3-teal">
+              <h1>
+                <i class="fa-fw fa-solid fa-address-card w3-margin-right"></i>
+                Ryan Wall
+              </h1>
+            </header>
+            <div class="w3-container">
+              <p>
+                <i
+                  class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"
+                ></i>
+                <b>MSAT Process Modelling Senior Manager</b>
+              </p>
+              <p>
+                <i
+                  class="fa fa-solid fa-building fa-fw w3-margin-right w3-large w3-text-teal"
+                ></i>
+                Johnson and Johnson, Titusville NJ
+              </p>
+              <p class="w3-hover-opacity">
+                <i
+                  class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"
+                ></i>
+                <a href="mailto:rwall9@its.jnj.com">rwall9@its.jnj.com</a>
+              </p>
+              <p class="w3-hover-opacity">
+                <i
+                  class="fa-brands fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"
+                ></i>
+                <a href="https://www.linkedin.com/in/ryan-wall-17807140/"
+                  >Find me on Linkedin</a
+                >
+              </p>
+              <p class="w3-hover-opacity">
+                <i
+                  class="fa-solid fa-address-card fa-fw w3-margin-right w3-large w3-text-teal"
+                ></i>
+                <a href="./index.html">Quick Contact Card</a>
+              </p>
+
+              <hr />
+              <p class="w3-xlarge">
+                <i class="fas fa-laptop-code w3-margin-right w3-text-teal"></i
+                ><b>Work Skillset</b>
+              </p>
+
+              <button
+                id="MVAButton"
+                onclick="buttonShow('MVAButton')"
+                class="w3-button w3-block w3-left-align"
+              >
+                <b>Modeling</b>
+              </button>
+
+              <div class="w3-container w3-hide">
+                <ul class="w3-ul">
+                  <li>Spectroscopic Modeling</li>
+                  <li>Principal Component Analysis</li>
+                  <li>Partial Least Squares</li>
+                  <li>Batch-Evolution Process Modeling</li>
+                  <li>Batch-Level Process Modeling</li>
+                  <li>Monte Carlo Simulation</li>
+                </ul>
+              </div>
+
+              <button
+                id="PythonButton"
+                onclick="buttonShow('PythonButton')"
+                class="w3-button w3-block w3-left-align"
+              >
+                <b>Python</b>
+              </button>
+
+              <div class="w3-container w3-hide">
+                <ul class="w3-ul">
+                  <li>Package Generation</li>
+                  <li>
+                    <code>pandas</code>, <code>numpy</code>, and
+                    <code>scipy</code> proficiency
+                  </li>
+                  <li>Data Import/Export</li>
+                  <li>Figure Generation</li>
+                </ul>
+              </div>
+
+              <button
+                id="ProcedureButton"
+                onclick="buttonShow('ProcedureButton')"
+                class="w3-button w3-block w3-left-align"
+              >
+                <b>Quality and Regulatory</b>
+              </button>
+
+              <div class="w3-container w3-hide">
+                <ul class="w3-ul">
+                  <li>SOP and Guideline Writing</li>
+                  <li>Regulatory Response Writing</li>
+                  <li>Work Instruction Generation</li>
+                </ul>
+              </div>
+
+              <button
+                id="OfficeButton"
+                onclick="buttonShow('OfficeButton')"
+                class="w3-button w3-block w3-left-align"
+              >
+                <b>Microsoft Office</b>
+              </button>
+
+              <div class="w3-container w3-hide">
+                <ul class="w3-ul">
+                  <li>Powerpoint</li>
+                  <li>Word</li>
+                  <li>
+                    Excel
+                    <ul class="w3-ul w3-small">
+                      <li>Pivot Tables</li>
+                      <li>Contitional IF</li>
+                      <li>Array Formulas</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                id="MiscSoftwareButton"
+                onclick="buttonShow('MiscSoftwareButton')"
+                class="w3-button w3-block w3-left-align"
+              >
+                <b>Misc. Software</b>
+              </button>
+
+              <div class="w3-container w3-hide">
+                <ul class="w3-ul">
+                  <li><code>git</code></li>
+                  <li>SQL</li>
+                  <li>LaTeX</li>
+                  <li>PLS Toolbox</li>
+                  <li>SIMCA</li>
+                  <li>MATLAB</li>
+                </ul>
+              </div>
+
+              <hr />
+              <p class="w3-xlarge">
+                <i class="fas fa-coffee w3-margin-right w3-text-teal"></i
+                ><b>Interests</b>
+              </p>
+
+              <button
+                id="CookingButton"
+                onclick="buttonShow('CookingButton')"
+                class="w3-button w3-block w3-left-align"
+              >
+                <b>Cooking</b><i class="arrow right"></i>
+              </button>
+
+              <div class="w3-container w3-hide">
+                <ul class="w3-ul">
+                  <li>Sous Vide</li>
+                  <li>Sourdough Bread</li>
+                  <li>Focaccia</li>
+                  <li>Lactofermentation</li>
+                </ul>
+              </div>
+
+              <button
+                id="HomebrewButton"
+                onclick="buttonShow('HomebrewButton')"
+                class="w3-button w3-block w3-left-align"
+              >
+                <b>Home Brew</b>
+              </button>
+
+              <div class="w3-container w3-hide">
+                <ul class="w3-ul">
+                  <li>All Grain</li>
+                  <li>Kegged Systems</li>
+                  <li>Ales and Stouts</li>
+                </ul>
+              </div>
+
+              <button
+                id="GardenButton"
+                onclick="buttonShow('GardenButton')"
+                class="w3-button w3-block w3-left-align"
+              >
+                <b>Gardening</b>
+              </button>
+
+              <div class="w3-container w3-hide">
+                <ul class="w3-ul">
+                  <li>President of Titusville Garden Club</li>
+                  <li>User of low and no-till methods</li>
+                </ul>
+              </div>
+
+              <button
+                id="MiscProgramButton"
+                onclick="buttonShow('MiscProgramButton')"
+                class="w3-button w3-block w3-left-align"
+              >
+                <b>Misc. Programming Projects</b>
+              </button>
+
+              <div class="w3-container w3-hide">
+                <ul class="w3-ul">
+                  <li>
+                    <a href="https://arden13.github.io/boids2D/"
+                      >Flocking Simulation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://arden13.github.io/quadTree/"
+                      >QuadTree Demo</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <br />
+            </div>
+          </div>
+
+          <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird w3-margin-top">
+          <!--Begin Work Card-->
+          <div class="w3-card-4 w3-white">
+            <header class="w3-container w3-teal">
+              <h1>
+                <i class="fa-fw fa-solid fa-user-astronaut w3-margin-right"></i>
+                About Me
+              </h1>
+            </header>
+            <div class="w3-container">
+              <p
+                class="w3-text-grey"
+                style="padding-left: 5%; padding-right: 5%"
+              >
+                While I've started my career as a chemist and spectroscopist, my
+                skillset has expanded tremendously into statistics, data
+                science, and professional coding. My analytical focus is on
+                modeling and process analytical technology (PAT) in GMP
+                Environments. My strategic focus is on automation, deployment,
+                and the relevant quality and regulatory frameworks for
+                validation.
+              </p>
+              <p
+                class="w3-text-grey"
+                style="padding-left: 5%; padding-right: 5%"
+              >
+                My work has given me experiences and collaborations across a
+                wide swathe of pharmaceutical departments including engineering,
+                R&D, quality, regulatory, and IT. This breadth of experience has
+                taught me how to communicate with diverse audiences on complex
+                subjects to drive the cutting edge of pharmaceutical technology.
+              </p>
+              <br />
+            </div>
+
+            <div class="w3-card-4">
+              <div>
+                <header class="w3-teal w3-container">
+                  <h2>
+                    <i
+                      class="fa fa-building fa-fw w3-margin-right w3-xxlarge"
+                    ></i>
+                    Work Experience
+                  </h2>
+                </header>
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b>MSAT Process Modelling Senior Manager</b>
+                    <small>Johnson and Johnson, Titusville NJ</small>
+                  </h5>
+                  <p class="w3-text-teal">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                    October 2023 -
+                    <span class="w3-tag w3-teal w3-round">Current</span>
+                  </p>
+                  <div class="w3-container">
+                    <ul class="w3-ul">
+                      <li>
+                        Driving standards for packaging models for deployment
+                      </li>
+                      <li>Leading Automation of Model CPV activities</li>
+                      <li>
+                        Packaging and Publishing models in GMP Environments
+                      </li>
+                      <li>Leading a team of 10 Scientists and Engineers</li>
+                      <li>
+                        Publishing Standard Procedures for Model Validation and
+                        Maintenance
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="w3-container">
+                  <hr />
+                  <h5 class="w3-opacity">
+                    <b>MSAT Process Modelling Manager</b>
+                    <small>Janssen Pharmaceuticals, Titusville NJ</small>
+                  </h5>
+                  <p class="w3-text-teal">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                    February 2023 - October 2023
+                  </p>
+
+                  <button
+                    id="btn_mdl_mgr"
+                    onclick="buttonShow('btn_mdl_mgr')"
+                    class="w3-button w3-block w3-left-align w3-opacity"
+                  >
+                    Expand Activities and Accomplishments
+                  </button>
+                  <div class="w3-container w3-hide">
+                    <ul class="w3-ul">
+                      <li>
+                        Negotiated multimillion dollar contract for modeling
+                        software
+                      </li>
+                      <li>
+                        Drove adoption of Agile tools for efficient model
+                        support
+                      </li>
+                      <li>Driver of GMP Qualification of SIMCA at JnJ</li>
+                      <li>
+                        Served as model deployment SME helping to package
+                        models, define quality framework, and assist in site
+                        adoption.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="w3-container">
+                  <hr />
+                  <h5 class="w3-opacity">
+                    <b>Senior Scientist</b>
+                    <small>Janssen Pharmaceuticals, Titusville NJ</small>
+                  </h5>
+                  <p class="w3-text-teal">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                    October 2021 - February 2023
+                  </p>
+
+                  <button
+                    id="btn_sensci"
+                    onclick="buttonShow('btn_sensci')"
+                    class="w3-button w3-block w3-left-align w3-opacity"
+                  >
+                    Expand Activities and Accomplishments
+                  </button>
+                  <div class="w3-container w3-hide">
+                    <ul class="w3-ul">
+                      <li>
+                        Served as real time release SME helping to define
+                        workflow for future programs.
+                      </li>
+                      <li>
+                        Developed skillsets of a small team of modeling SMEs and
+                        data engineer
+                      </li>
+                      <li>
+                        Developed models and performed statistical analyses for
+                        various large and small molecule processes
+                      </li>
+                      <li>
+                        Developed process models that drove experiments at scale
+                        leading to yield improvements
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="w3-container">
+                  <hr />
+                  <h5 class="w3-opacity">
+                    <b>Scientist</b>
+                    <small>Janssen Pharmaceuticals, Titusville NJ</small>
+                  </h5>
+                  <p class="w3-text-teal">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                    June 2019 - October 2021
+                  </p>
+
+                  <button
+                    id="btn_scientist"
+                    onclick="buttonShow('btn_scientist')"
+                    class="w3-button w3-block w3-left-align w3-opacity"
+                  >
+                    Expand Activities and Accomplishments
+                  </button>
+                  <div class="w3-container w3-hide">
+                    <ul class="w3-ul">
+                      <li>
+                        Developed Python Package for Deployment of all Real-time
+                        Release Models
+                      </li>
+                      <li>
+                        Co-Authored Guideline for Modeling and Simulation at JnJ
+                      </li>
+                      <li>
+                        Developed unit testing framework to ensure clean
+                        deployment of modeling python package
+                      </li>
+                      <li>Developed a Surrogate Dissolution Model</li>
+                      <li>Developed Batch-Level models for RTRT Project</li>
+                      <li>Mentored two Co-Op students</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="w3-container">
+                  <hr />
+                  <h5 class="w3-opacity">
+                    <b>Postdoctoral Fellow</b>
+                    <small>Janssen Pharmaceuticals, Raritan NJ</small>
+                  </h5>
+                  <p class="w3-text-teal">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2018
+                    - June 2019
+                  </p>
+
+                  <button
+                    id="btn_postdoc"
+                    onclick="buttonShow('btn_postdoc')"
+                    class="w3-button w3-block w3-left-align w3-opacity"
+                  >
+                    Expand Activities and Accomplishments
+                  </button>
+                  <div class="w3-container w3-hide">
+                    <ul class="w3-ul">
+                      <li>
+                        Supported Writing of Surrogate Dissolution Model
+                        Regulatory Response
+                      </li>
+                      <li>
+                        Developed Scientiﬁcally-Driven Rationale for Skip-Lot
+                        Testing of Impurities
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="w3-container">
+                  <hr />
+                  <h5 class="w3-opacity">
+                    <b>Co-Op</b>
+                    <small>Janssen Pharmaceuticals, Raritan NJ</small>
+                  </h5>
+                  <p class="w3-text-teal">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                    Feb 2018 - Oct 2018
+                  </p>
+                </div>
+              </div>
+              <br />
+            </div>
+            <!--End Work Card-->
+
+            <!--Begin Education Card-->
+
+            <div class="w3-card-4 w3-white">
+              <header class="w3-container w3-teal">
+                <h2 class="">
+                  <i
+                    class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge"
+                  ></i>
+                  Education
+                </h2>
+              </header>
+              <div class="w3-container">
+                <h5 class="w3-opacity">
+                  <b>Ph.D. Physical Chemistry</b>
+                  <small>UC Davis, 3.91 GPA</small>
+                </h5>
+                <p class="w3-text-teal">
+                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                  2012 - 2018
+                </p>
+                <div class="w3-container">
+                  <p>
+                    <i
+                      >Electrochemical EPR investigations into Water Oxidation
+                      Electrocatalysis</i
+                    >
+                  </p>
+                  <p>Advisor: Prof. R.D. Britt</p>
+                  <hr />
+                </div>
+              </div>
+
+              <div class="w3-container">
+                <h5 class="w3-opacity">
+                  <b>B.S.</b>
+                  <small>University of Nebraska, Lincoln, 3.36 GPA</small>
+                </h5>
+                <p class="w3-text-teal">
+                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                  2008 - 2012
+                </p>
+                <div class="w3-container">
+                  <p>Major in Chemistry, Minors in Physics and Mathematics</p>
+                </div>
+              </div>
+
+              <!--End Education Card-->
+              <br />
+            </div>
+
+            <!--Begin Presentation/Publication Card-->
+            <div class="w3-card-4 w3-white">
+              <header class="w3-container w3-teal">
+                <h2>
+                  <i class="fa fa-scroll fa-fw w3-margin-right w3-xxlarge"></i>
+                  Presentations
+                </h2>
+              </header>
+
+              <div class="w3-container">
+                <!-- <h5 class="w3-opacity"><b>Oral Presentations</b></h5> -->
+                <p>Mid-IR for Real-Time EOR Determination <i>IFPAC</i>, 2024</p>
+                <p>
+                  Real Time Release: A journey of and past present and into the
+                  future. <i>IFPAC</i>, 2024
+                </p>
+                <p>
+                  Spectroscopic and <i>in-silico</i> Modeling
+                  <i>PPAR Roundtable</i>, New Jersey, 2023
+                </p>
+                <p>
+                  Development of Real Time Release Test of Tablet Dissolution
+                  <i>IFPAC</i>, Puerto Rico, 2019
+                </p>
+                <p>
+                  Gray - Britt Collaboration: EPR Spectroscopy for Mechanistic
+                  Insights of Water Oxidation Catalysts made by PLAL,
+                  <i>CCI Solar Fuels Annual Meeting</i>, Newport Beach CA,
+                  January 23-25, 2015
+                </p>
+                <br />
+              </div>
+
+              <!--End Presentation/Publication Card-->
+            </div>
+          </div>
+        </div>
+        <!-- End Right Column -->
+      </div>
+
+      <!-- End Grid -->
+    </div>
+
+    <!-- End Page Container -->
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+      <p>
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      function buttonShow(buttonID) {
+        var button = document.getElementById(buttonID);
+        button.classList.toggle("active");
+
+        button.nextElementSibling.classList.toggle("w3-show");
+      }
+    </script>
+  </body>
+</html>
